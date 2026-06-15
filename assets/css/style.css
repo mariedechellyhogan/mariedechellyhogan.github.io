@@ -5,10 +5,10 @@
 }
 
 :root {
-  --text: #1a1a1a;
-  --muted: #555;
-  --accent: #2a52be;
-  --border: #ddd;
+  --text: #e8eef2;
+  --muted: #8aaabb;
+  --accent: #90c8e0;
+  --border: #4a6272;
   --max-width: 720px;
 }
 
@@ -19,7 +19,7 @@ html {
 body {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--text);
-  background: #fff;
+  background: #3a4a57;
   line-height: 1.65;
   padding: 0 1.25rem;
 }
@@ -76,7 +76,8 @@ main {
 
 .photo {
   display: block;
-  width: 160px;
+  width: 480px;
+  max-width: 100%;
   border-radius: 2px;
   margin: 1.5rem 0;
 }
