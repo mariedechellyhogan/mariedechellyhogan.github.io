@@ -1,0 +1,264 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: #1a1a1a;
+  --muted: #555;
+  --accent: #2a52be;
+  --border: #ddd;
+  --max-width: 720px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.65;
+  padding: 0 1.25rem;
+}
+
+/* ── Navigation ── */
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 0 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem 1.75rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+nav .site-name {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  text-decoration: none;
+  margin-right: auto;
+}
+
+nav a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+nav a.active {
+  color: var(--text);
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 1px;
+}
+
+/* ── Main content ── */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+/* ── About page ── */
+
+.photo {
+  display: block;
+  width: 160px;
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.contact-links {
+  margin-top: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.contact-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-links span {
+  color: var(--border);
+  margin: 0 0.4rem;
+}
+
+/* ── Research page ── */
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.paper {
+  /* no extra style needed */
+}
+
+.paper-title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
+}
+
+.paper-title a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
+}
+
+.paper-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.paper-abstract {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.paper-links {
+  margin-top: 0.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.paper-links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+section + section {
+  margin-top: 3rem;
+}
+
+/* ── CV page ── */
+
+.cv-header {
+  margin-bottom: 2rem;
+}
+
+.cv-download {
+  margin-top: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.cv-download a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cv-download a:hover {
+  text-decoration: underline;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0.25rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.cv-year {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding-top: 0.15rem;
+}
+
+.cv-detail strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.cv-detail .institution {
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── Footer ── */
+
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Mobile ── */
+
+@media (max-width: 560px) {
+  .cv-row {
+    grid-template-columns: 70px 1fr;
+  }
+}
